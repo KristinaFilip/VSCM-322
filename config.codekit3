@@ -29,6 +29,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/HeroImage.png" : {
+      "ft" : 32768,
+      "iS" : 501812,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/HeroImage.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -68,7 +81,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
