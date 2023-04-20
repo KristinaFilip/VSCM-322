@@ -15,6 +15,7 @@ html {
   --black: #000;
   --green: #2d8973;
   --gray: #444440;
+  --lightgreen: #cce4df;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -397,7 +398,6 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  margin: none;
 }
 nav ul a:link {
   text-decoration: none;
@@ -434,7 +434,7 @@ nav ul li a:visited:active {
 ============= */
 header {
   position: fixed;
-  background-color: white;
+  background-color: #cce4df;
   width: 100%;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
   z-index: 100;
