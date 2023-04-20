@@ -46,9 +46,12 @@ gsap.set(".red-box", {x:200});
 //Special Properties = duration, callbacks, delays, easing, staggers, repeat, yoyo, repeat, delay
 
 
-gsap.to(".element", {duration:1, x:20});
-gsap.to(".button", {duration:1.5, x:20});
+gsap.to(".element", {duration:1, ease:"power4.out", x:20});
+gsap.to(".button", {duration:1.5, ease:"back.out(1.7)", x:20});
 gsap.from(".element", {scale:1.2});
+gsap.from(".hero", {duration:1, scale:1.15});
+gsap.from(".links", {duration:1, alpha:0.25});
+
 
 
 
