@@ -397,6 +397,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
+  margin: none;
 }
 nav ul a:link {
   text-decoration: none;
