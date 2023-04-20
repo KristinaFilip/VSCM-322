@@ -1,26 +1,53 @@
 /* =============
     Navigation
 ============= */
-nav{
-    height: 100%;
 
-    ul{
+aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+
+    ul {
         height: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        list-style-type: none;
 
-        li{
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+
+        li {
             margin-left: 4vw;
 
-            a:link, a:visited{
-                font-family: "Roboto Slad", serif;
+            a:link,
+            a:visited {
+                font-family: "Nunito Sans";
                 color: green;
-                transition: 0,25s;
+                transition: 0, 25s;
                 font-size: re-calc(18);
-                font-weight: 300;
+                font-weight: 800;
+                font-size: 12pt;
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     color: gray;
                 }
             }

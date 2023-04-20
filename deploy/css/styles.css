@@ -386,26 +386,46 @@ textarea {
 /* =============
     Navigation
 ============= */
-nav {
-  height: 100%;
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav ul {
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style-type: none;
+}
+nav ul a:link {
+  text-decoration: none;
+}
+nav ul a:visited {
+  text-decoration: none;
+}
+nav ul a:hover {
+  text-decoration: underline;
+}
+nav ul a:active {
+  text-decoration: underline;
 }
 nav ul li {
   margin-left: 4vw;
 }
-nav ul li a:link, nav ul li a:visited {
-  font-family: "Roboto Slad", serif;
+nav ul li a:link,
+nav ul li a:visited {
+  font-family: "Nunito Sans";
   color: green;
   transition: 0, 25s;
   font-size: re-calc(18);
-  font-weight: 300;
+  font-weight: 800;
+  font-size: 12pt;
 }
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
   color: gray;
 }
 
@@ -416,12 +436,13 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
   z-index: 100;
 }
 header > div {
   display: grid;
   grid-template-columns: 20% auto;
-  padding: 8px 16px;
+  padding: 8px 32px;
 }
 header > div aside a {
   display: inline-block;
