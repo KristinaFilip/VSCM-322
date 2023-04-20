@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    font-weight: 00;
+    color: #444440;
+
+    div{
+        padding: 0px 48px;
+
+        h1{
+            letter-spacing: 5pt;
+            color: #2d8973;
+            
+            
+            @include md{
+                font-size: rem-calc(20);
+            }
+            @include lg{
+                font-size: rem-calc(30);
+            }
+        }
+
+    }
+}

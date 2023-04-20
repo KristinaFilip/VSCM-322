@@ -14,7 +14,6 @@ nav {
         height: 100%;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
         list-style-type: none;
 
         a:link {
@@ -40,7 +39,7 @@ nav {
             a:link,
             a:visited {
                 font-family: "Nunito Sans";
-                color: green;
+                color: #2d8973;
                 transition: 0, 25s;
                 font-size: re-calc(18);
                 font-weight: 800;

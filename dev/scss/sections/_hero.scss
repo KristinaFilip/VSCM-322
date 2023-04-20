@@ -1,0 +1,65 @@
+#hero{
+
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". hero .";
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        display: flex;
+        justify-items: center;
+        height: 100%;
+        align-items: center;
+        background-image: url('../img/Hero.png');
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+
+        @include xl{
+            grid-area: hero;
+        }
+    }
+
+    #hero-content{
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: rem-calc(80);
+            color: white;
+            font-family: "Nunito Sans";
+            font-weight: 900;
+            line-height: 10px;
+            letter-spacing: 5pt;
+
+            @include md{
+                font-size: rem-calc(20);
+            }
+            @include lg{
+                font-size: rem-calc(30);
+            }
+        }
+
+        h2{
+            font-size: rem-calc(80);
+            font-family: "Nunito Sans";
+            font-weight: 300;
+            letter-spacing: 2.2pt;
+
+
+            @include md{
+                font-size: rem-calc(20);
+            }
+            @include lg{
+                font-size: rem-calc(20);
+            }
+        }
+    } 
+}
