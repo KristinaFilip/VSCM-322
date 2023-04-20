@@ -30,6 +30,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         h1{
             font-size: rem-calc(80);
@@ -38,6 +39,8 @@
             font-weight: 900;
             line-height: 10px;
             letter-spacing: 5pt;
+            margin-top: 50px;
+
 
             @include md{
                 font-size: rem-calc(20);
@@ -52,6 +55,7 @@
             font-family: "Nunito Sans";
             font-weight: 300;
             letter-spacing: 2.2pt;
+            line-height: 10px;
 
 
             @include md{
@@ -60,6 +64,18 @@
             @include lg{
                 font-size: rem-calc(20);
             }
+        }
+
+        button{
+            color: #2d8973;
+            font-weight: 900;
+            letter-spacing: 2.2pt;
+            background-color: white;
+            padding: 8px;
+            border-radius: 32px;
+            border-style: none;
+            width: 200px;
+            margin-top: 20px;
         }
     } 
 }
