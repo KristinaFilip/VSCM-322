@@ -493,6 +493,11 @@ header > div aside a {
   letter-spacing: 5pt;
   margin-top: 50px;
 }
+@media (min-width: 576px) {
+  #hero #hero-content h1 {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 768px) {
   #hero #hero-content h1 {
     font-size: 1.25rem;
@@ -500,7 +505,7 @@ header > div aside a {
 }
 @media (min-width: 1024px) {
   #hero #hero-content h1 {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
   }
 }
 #hero #hero-content h2 {
@@ -509,6 +514,11 @@ header > div aside a {
   font-weight: 300;
   letter-spacing: 2.2pt;
   line-height: 10px;
+}
+@media (min-width: 576px) {
+  #hero #hero-content h2 {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 768px) {
   #hero #hero-content h2 {
@@ -542,9 +552,30 @@ section {
 section div {
   padding: 0px 48px;
 }
+@media (min-width: 576px) {
+  section div {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 768px) {
+  section div {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  section div {
+    font-size: 0.9375rem;
+  }
+}
 section div h1 {
   letter-spacing: 5pt;
   color: #2d8973;
+  margin-top: 48px;
+}
+@media (min-width: 576px) {
+  section div h1 {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 768px) {
   section div h1 {
@@ -553,6 +584,6 @@ section div h1 {
 }
 @media (min-width: 1024px) {
   section div h1 {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
   }
 }

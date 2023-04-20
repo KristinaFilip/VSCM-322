@@ -41,12 +41,14 @@
             letter-spacing: 5pt;
             margin-top: 50px;
 
-
+            @include sm{
+                font-size: rem-calc(20);
+            }
             @include md{
                 font-size: rem-calc(20);
             }
             @include lg{
-                font-size: rem-calc(30);
+                font-size: rem-calc(20);
             }
         }
 
@@ -57,7 +59,9 @@
             letter-spacing: 2.2pt;
             line-height: 10px;
 
-
+            @include sm{
+                font-size: rem-calc(20);
+            }
             @include md{
                 font-size: rem-calc(20);
             }
