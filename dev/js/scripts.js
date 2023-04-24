@@ -1,7 +1,5 @@
 import { gsap } from "gsap";
 
-gsap.set(".red-box", {x:200});
-
 //Keywords - to store data
 
 //var - stands for variable, older, avoid
