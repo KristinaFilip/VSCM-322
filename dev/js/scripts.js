@@ -43,6 +43,8 @@ import { gsap } from "gsap";
 //Transforms = (rotation, scaleX, scaleY, skewX, skewY, x, y, rotationX, and rotationY, alpha, aytoalpha);
 //Special Properties = duration, callbacks, delays, easing, staggers, repeat, yoyo, repeat, delay
 
+//OLD
+
 //gsap.to(".element", {duration:1.5, ease:"power4.out", x:20})
 //gsap.to(".button", {duration:1.5, ease:"bounce.out", x:20})
 //gsap.from(".element", {scale:1.2})
@@ -50,22 +52,93 @@ import { gsap } from "gsap";
 //gsap.from(".links", {duration:3, alpha:0.25})
 //gsap.from(".logo", {scale:1.15, duration:1, alpha:0.25})
 
+
+//mainTL.to(".hero")
+    //.addLabel("myLabel")
+   // .to(".element", {duration:1.5, ease:"power4.out", x:20},"myLabel")
+   // .to(".button", {duration:1.5, ease:"bounce.out", x:20},"myLabel")
+   // .from(".element", {scale:1.2},"myLabel")
+   // .from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10},"myLabel")
+
+//;
+
+
+//mainTL.to(".header")
+  //  .from(".links", {duration:3, alpha:0.25})
+  //  .from(".logo", {scale:1.15, duration:1, alpha:0.25})
+
+//;
+
 //TIMELINE
 
-let mainTL = gsap.timeline({delay:1});
+let mainTL = gsap.timeline({});
 
-mainTL.to(".hero")
-    .addLabel("myLabel","+=2")
-    .to(".element", {duration:1.5, ease:"power4.out", x:20},"myLabel")
-    .to(".button", {duration:1.5, ease:"bounce.out", x:20},"myLabel")
-    .from(".element", {scale:1.2},"myLabel")
-    .from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10},"myLabel")
+//FUNCTION 
 
-;
+function elementAni (){
+        let tl = gsap.timeline({});
+        let mm = gsap.matchMedia();
 
+        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        tl.to(".element", {duration:1.5, ease:"power4.out", x:20})
+        ;
+        });
 
-mainTL.to(".header")
-    .from(".links", {duration:3, alpha:0.25})
-    .from(".logo", {scale:1.15, duration:1, alpha:0.25})
+    return tl;
+}
+
+function buttonAni (){
+        let tl = gsap.timeline({});
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        tl.to(".button", {duration:1.5, ease:"bounce.out", x:20})
+        ;
+        });
+
+    return tl;
+}
+
+function heroAni (){
+        let tl = gsap.timeline({});
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        tl.from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10})
+        ;
+        });
+
+    return tl;
+}
+
+function linksAni (){
+        let tl = gsap.timeline({});
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        tl .from(".links", {duration:3, alpha:0.25})
+        ;
+        });
+
+    return tl;
+}
+
+function logoAni (){
+        let tl = gsap.timeline({});
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        tl.from(".logo", {scale:1.15, duration:1, alpha:0.25})
+        ;
+        });
+
+    return tl;
+}
+
+mainTL.add(elementAni(), 0)
+.add(buttonAni(), 0)
+.add(heroAni(), 0)
+.add(linksAni(), 0)
+.add(logoAni(), 0)
 
 ;
