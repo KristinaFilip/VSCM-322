@@ -79,7 +79,7 @@ function elementAni (){
         let tl = gsap.timeline({});
         let mm = gsap.matchMedia();
 
-        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        mm.add("(min-width:767px)", () =>{
         tl.to(".element", {duration:1.5, ease:"power4.out", x:20})
         ;
         });
@@ -91,7 +91,7 @@ function buttonAni (){
         let tl = gsap.timeline({});
         let mm = gsap.matchMedia();
 
-        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        mm.add("(min-width:767px)", () =>{
         tl.to(".button", {duration:1.5, ease:"bounce.out", x:20})
         ;
         });
@@ -103,7 +103,7 @@ function heroAni (){
         let tl = gsap.timeline({});
         let mm = gsap.matchMedia();
 
-        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        mm.add("(min-width:767px)", () =>{
         tl.from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10})
         ;
         });
@@ -115,7 +115,7 @@ function linksAni (){
         let tl = gsap.timeline({});
         let mm = gsap.matchMedia();
 
-        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        mm.add("(min-width:767px)", () =>{
         tl .from(".links", {duration:3, alpha:0.25})
         ;
         });
@@ -127,7 +127,7 @@ function logoAni (){
         let tl = gsap.timeline({});
         let mm = gsap.matchMedia();
 
-        mm.add("(min-width:767px), (max-width:1440px)", () =>{
+        mm.add("(min-width:767px)", () =>{
         tl.from(".logo", {scale:1.15, duration:1, alpha:0.25})
         ;
         });
