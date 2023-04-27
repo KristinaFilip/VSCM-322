@@ -43,14 +43,29 @@ import { gsap } from "gsap";
 //Transforms = (rotation, scaleX, scaleY, skewX, skewY, x, y, rotationX, and rotationY, alpha, aytoalpha);
 //Special Properties = duration, callbacks, delays, easing, staggers, repeat, yoyo, repeat, delay
 
+//gsap.to(".element", {duration:1.5, ease:"power4.out", x:20})
+//gsap.to(".button", {duration:1.5, ease:"bounce.out", x:20})
+//gsap.from(".element", {scale:1.2})
+//gsap.from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10})
+//gsap.from(".links", {duration:3, alpha:0.25})
+//gsap.from(".logo", {scale:1.15, duration:1, alpha:0.25})
 
-gsap.to(".element", {duration:1, ease:"power4.out", x:20});
-gsap.to(".button", {duration:1.5, ease:"back.out(1.7)", x:20});
-gsap.from(".element", {scale:1.2});
-gsap.from(".hero", {duration:1, scale:1.15});
-gsap.from(".links", {duration:1, alpha:0.25});
+//TIMELINE
+
+let mainTL = gsap.timeline({delay:1});
+
+mainTL.to(".hero")
+    .addLabel("myLabel","+=2")
+    .to(".element", {duration:1.5, ease:"power4.out", x:20},"myLabel")
+    .to(".button", {duration:1.5, ease:"bounce.out", x:20},"myLabel")
+    .from(".element", {scale:1.2},"myLabel")
+    .from(".hero-main", {duration: 2.5, scale: 1.15, alpha:0.10},"myLabel")
+
+;
 
 
+mainTL.to(".header")
+    .from(".links", {duration:3, alpha:0.25})
+    .from(".logo", {scale:1.15, duration:1, alpha:0.25})
 
-
-
+;
