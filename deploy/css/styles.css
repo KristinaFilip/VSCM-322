@@ -423,9 +423,57 @@ header > div aside a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 100px;
   filter: drop-shadow(5px 5px 10px gray);
-  width: 12em;
+}
+
+@media (min-width: 576px) {
+  #D1 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #D1 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #D1 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #D2 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #D2 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #D2 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #D3 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #D3 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #D3 {
+    width: 15em;
+  }
 }
 
 #section-2 {
@@ -469,6 +517,54 @@ header > div aside a {
   width: 12em;
 }
 
+@media (min-width: 576px) {
+  #FG1 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #FG1 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #FG1 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #FG2 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #FG2 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #FG2 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #FG3 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #FG3 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #FG3 {
+    width: 15em;
+  }
+}
+
 #section-3 {
   background-color: var(--lightgreen);
   height: 100vh;
@@ -508,4 +604,52 @@ header > div aside a {
   gap: 100px;
   filter: drop-shadow(5px 5px 10px gray);
   width: 12em;
+}
+
+@media (min-width: 576px) {
+  #P1 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #P1 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #P1 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #P2 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #P2 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #P2 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #P3 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #P3 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #P3 {
+    width: 15em;
+  }
 }

@@ -30,9 +30,46 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
         gap: 100px;
         filter: drop-shadow(5px 5px 10px gray);
-        width: 12em;
+    }
+}
+
+
+#D1{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
+
+#D2{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
+
+#D3{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
     }
 }
 

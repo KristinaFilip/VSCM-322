@@ -36,3 +36,38 @@
     }
 }
 
+#FG1{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
+
+#FG2{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
+
+#FG3{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
