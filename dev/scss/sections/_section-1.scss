@@ -4,14 +4,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     h1{
+        font-size: rem-calc(80);
         color: #2d8973;
         font-family: "Nunito Sans";
         font-weight: 900;
         line-height: 10px;
         letter-spacing: 5pt;
-        
+    }
+
+    #images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: column;
+        gap: 100px;
     }
 }
 

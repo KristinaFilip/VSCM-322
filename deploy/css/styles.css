@@ -393,13 +393,22 @@ header > div aside a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #section-1 h1 {
+  font-size: 5rem;
   color: #2d8973;
   font-family: "Nunito Sans";
   font-weight: 900;
   line-height: 10px;
   letter-spacing: 5pt;
+}
+#section-1 #images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: column;
+  gap: 100px;
 }
 
 #section-2 {
