@@ -388,11 +388,18 @@ header > div aside a {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
+  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#section-1 h1 {
+  color: #2d8973;
+  font-family: "Nunito Sans";
+  font-weight: 900;
+  line-height: 10px;
+  letter-spacing: 5pt;
 }
 
 #section-2 {
