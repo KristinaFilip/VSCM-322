@@ -1,7 +1,38 @@
-#section-3 {
-	background-color: var(--yellow);
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#section-3{
+    background-color: var(--lightgreen);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: rem-calc(80);
+        color: var(--green);
+        font-family: "Nunito Sans";
+        font-weight: 900;
+        line-height: 10px;
+        letter-spacing: 3pt;
+        padding-bottom: 50px;
+
+        @include sm{
+            font-size: rem-calc(20);
+        }
+        @include md{
+            font-size: rem-calc(20);
+        }
+        @include lg{
+            font-size: rem-calc(20);
+        }
+    }
+
+    #images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        filter: drop-shadow(5px 5px 10px gray);
+        width: 12em;
+    }
 }
+

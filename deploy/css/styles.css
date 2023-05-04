@@ -388,7 +388,7 @@ header > div aside a {
     Footer
 ============= */
 #section-1 {
-  background-color: white;
+  background-color: var(--lightgreen);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -397,40 +397,115 @@ header > div aside a {
 }
 #section-1 h1 {
   font-size: 5rem;
-  color: #2d8973;
+  color: var(--green);
   font-family: "Nunito Sans";
   font-weight: 900;
   line-height: 10px;
-  letter-spacing: 5pt;
+  letter-spacing: 3pt;
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  #section-1 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-1 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-1 h1 {
+    font-size: 1.25rem;
+  }
 }
 #section-1 #images {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: column;
   gap: 100px;
+  filter: drop-shadow(5px 5px 10px gray);
+  width: 12em;
 }
 
 #section-2 {
-  background-color: var(--charcoal);
+  background-color: var(--white);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
+  flex-direction: column;
 }
-#section-2 #box {
-  height: 100px;
-  width: 100px;
-  background-color: var(--red);
-  border: 3px solid var(--white);
+#section-2 h1 {
+  font-size: 5rem;
+  color: var(--green);
+  font-family: "Nunito Sans";
+  font-weight: 900;
+  line-height: 10px;
+  letter-spacing: 3pt;
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  #section-2 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-2 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-2 h1 {
+    font-size: 1.25rem;
+  }
+}
+#section-2 #images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  filter: drop-shadow(5px 5px 10px gray);
+  width: 12em;
 }
 
 #section-3 {
-  background-color: var(--yellow);
+  background-color: var(--lightgreen);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+#section-3 h1 {
+  font-size: 5rem;
+  color: var(--green);
+  font-family: "Nunito Sans";
+  font-weight: 900;
+  line-height: 10px;
+  letter-spacing: 3pt;
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  #section-3 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-3 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 h1 {
+    font-size: 1.25rem;
+  }
+}
+#section-3 #images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  filter: drop-shadow(5px 5px 10px gray);
+  width: 12em;
 }
