@@ -210,7 +210,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/section-3.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/footer.html" : {
       "cB" : 0,
@@ -249,7 +249,7 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/header.html",
+      "oAP" : "\/dev\/global\/header.html",
       "oF" : 3
     },
     "\/dev\/global\/scripts.kit" : {
@@ -258,7 +258,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
