@@ -41,6 +41,7 @@ function section2Ani (){
 
     return tl;
 }
+// Having the pictures rotate as you scroll by makes it look like if someone was carefully fixing the pictures to make it look organized. 
 
 function section3Ani (){
     let tl = gsap.timeline({
@@ -58,6 +59,8 @@ function section3Ani (){
 
     return tl;
 }
+//The pictures that move from left to right as it scrolls to make it look as if someone is sliding you the photos to look at. 
+//It also puts them into motion even though they are still photographs.
 
 function section4Ani (){
     let tl = gsap.timeline({
@@ -75,6 +78,8 @@ function section4Ani (){
 
     return tl;
 }
+//The last section has the paintings swing in from right to left and slightly back out for a fun effect. 
+//The pictures are more fun and colorful than the rest, so I wanted the scroll to have a more whimsical feel as it swings in.
 
 //BUTTON LISTENERS
 //imagesOne.addEventListener("mouseover",function(){
