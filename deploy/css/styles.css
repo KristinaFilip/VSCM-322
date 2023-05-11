@@ -653,3 +653,92 @@ header > div aside a {
     width: 15em;
   }
 }
+
+#section-4 {
+  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section-4 h1 {
+  font-size: 5rem;
+  color: var(--green);
+  font-family: "Nunito Sans";
+  font-weight: 900;
+  line-height: 10px;
+  letter-spacing: 3pt;
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  #section-4 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-4 h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-4 h1 {
+    font-size: 1.25rem;
+  }
+}
+#section-4 #images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  filter: drop-shadow(5px 5px 10px gray);
+  width: 12em;
+}
+
+@media (min-width: 576px) {
+  #Painting1 {
+    width: 8em;
+  }
+}
+@media (min-width: 768px) {
+  #Painting1 {
+    width: 15em;
+  }
+}
+@media (min-width: 1024px) {
+  #Painting1 {
+    width: 20em;
+  }
+}
+
+@media (min-width: 576px) {
+  #Painting2 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #Painting2 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #Painting2 {
+    width: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  #Painting3 {
+    width: 6em;
+  }
+}
+@media (min-width: 768px) {
+  #Painting3 {
+    width: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  #Painting3 {
+    width: 15em;
+  }
+}

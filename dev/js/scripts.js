@@ -53,8 +53,25 @@ function section3Ani (){
         }});
     tl.from(".images3", {duration:1.5, ease:"power4.out", x:-300}, 0)
     .from(".images3", {duration:1.5, alpha:0.25, scale:1.15}, 0)
-    .to(".title3", {duration:1.5, ease:"power4.out", x:20}, 0)
+    .to(".title3", {duration:1.5, ease:"power4.out", y:20}, 0)
     .from(".title3", {duration:1.5, alpha:0.25}, 0)
+
+    return tl;
+}
+
+function section4Ani (){
+    let tl = gsap.timeline({
+        scrollTrigger:{
+            trigger: ".images4",
+            start:"top 90%",
+            end:"top 30%",
+            scrub:true,
+            markers:false
+        }});
+    tl.from(".images4", {duration:2, ease:"back.out(1.7)", x:300}, 0)
+    .from(".images4", {duration:1.5, alpha:0.25, scale:1.15, rotation:-10}, 0)
+    .to(".title4", {duration:1.5, ease:"power4.out", y:20}, 0)
+    .from(".title4", {duration:1.5, alpha:0.25}, 0)
 
     return tl;
 }
@@ -68,6 +85,7 @@ function section3Ani (){
 mainTL.add(section1Ani(), 0)
 .add(section2Ani(), 0)
 .add(section3Ani(), 0)
+.add(section4Ani(), 0)
 
 ;
 

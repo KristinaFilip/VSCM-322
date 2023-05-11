@@ -1,0 +1,73 @@
+#section-4{
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: rem-calc(80);
+        color: var(--green);
+        font-family: "Nunito Sans";
+        font-weight: 900;
+        line-height: 10px;
+        letter-spacing: 3pt;
+        padding-bottom: 50px;
+
+        @include sm{
+            font-size: rem-calc(20);
+        }
+        @include md{
+            font-size: rem-calc(20);
+        }
+        @include lg{
+            font-size: rem-calc(20);
+        }
+    }
+
+    #images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        filter: drop-shadow(5px 5px 10px gray);
+        width: 12em;
+    }
+}
+
+#Painting1{
+    @include sm{
+        width:8em;
+    }
+    @include md{
+        width:15em;
+    }
+    @include lg{
+        width: 20em;
+    }
+}
+
+#Painting2{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}
+
+#Painting3{
+    @include sm{
+        width:6em;
+    }
+    @include md{
+        width:10em;
+    }
+    @include lg{
+        width: 15em;
+    }
+}

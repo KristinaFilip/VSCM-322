@@ -169,7 +169,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/Painting1.jpeg" : {
+    "\/deploy\/img\/Painting1.jpg" : {
       "ft" : 16384,
       "iS" : 858919,
       "jF" : 0,
@@ -195,7 +195,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/Painting3.JPG" : {
+    "\/deploy\/img\/Painting3.jpg" : {
       "ft" : 16384,
       "iS" : 388010,
       "jF" : 0,
@@ -250,6 +250,14 @@
       "oA" : 1,
       "oAP" : "\/dev\/content\/section-3.html",
       "oF" : 1
+    },
+    "\/dev\/content\/section-4.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section-4.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.html" : {
       "cB" : 0,
@@ -508,6 +516,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_section-3.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_section-4.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_section-4.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
