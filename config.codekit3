@@ -169,6 +169,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Painting1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 858919,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Painting1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Painting2.jpg" : {
+      "ft" : 16384,
+      "iS" : 689432,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Painting2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Painting3.JPG" : {
+      "ft" : 16384,
+      "iS" : 388010,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Painting3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
