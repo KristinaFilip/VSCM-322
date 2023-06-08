@@ -5,7 +5,6 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, GSDevTools);
 
-
 let mainTl = gsap.timeline({});
 
 function museumAnimation(){
@@ -55,3 +54,4 @@ mainTl.add(museumAnimation(), 0)
 
 
 GSDevTools.create();
+
