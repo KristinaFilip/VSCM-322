@@ -1,19 +1,27 @@
-//import { gsap } from "gsap";
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
-//import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools); //MorphSVGPlugin
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, GSDevTools);
+ 
 
-const mainTl = gsap.timeline();
+let mainTl = gsap.timeline({});
 
-mainTl.from("darkblue-circle1", {duration:1, scale:0})
-.to("darkblue-circle1", {duration:1, scale:100})
+function logoAnimation(){
+    let tl = gsap.timeline({});
 
+    tl.from("darkblue-circle1", {duration:1, scale:2}, 0)
+
+    return tl;
+
+}
+
+mainTl.add(logoAnimation(), 0)
 
 ;
 
 
 
 GSDevTools.create();
+
