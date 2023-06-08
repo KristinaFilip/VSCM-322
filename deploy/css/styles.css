@@ -409,3 +409,9 @@ textarea {
 #content > div #brain {
   visibility: hidden;
 }
+#content > div #umlaut-down1 {
+  visibility: hidden;
+}
+#content > div #umlaut-down2 {
+  visibility: hidden;
+}
