@@ -406,3 +406,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+#content > div #brain {
+  visibility: hidden;
+}

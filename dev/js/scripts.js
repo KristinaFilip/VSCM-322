@@ -11,7 +11,7 @@ let mainTl = gsap.timeline({});
 function museumAnimation(){
     let tl = gsap.timeline({});
 
-    tl.from("#m1-draw", {duration:1, drawSVG:"100%"}, 0)
+    tl.from("m1-draw", {duration:1, drawSVG:"100%"}, 0)
     .from("#u1-draw", {duration:1, drawSVG:"100%"}, 0)
     .from("#s-draw", {duration:1, drawSVG:"100%"}, 0)
     .from("#u2-draw", {duration:1, drawSVG:"100%"}, 0)
@@ -32,8 +32,8 @@ function mutterAnimation(){
 
 
 
-mainTl.add(museumAnimation())
-.add(mutterAnimation())
+mainTl.add(museumAnimation(), 0)
+.add(mutterAnimation(), 0)
 
 ;
 
