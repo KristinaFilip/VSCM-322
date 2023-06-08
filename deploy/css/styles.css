@@ -406,12 +406,9 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-#content > div #brain {
+#content > div #umlaut1 {
   visibility: hidden;
 }
-#content > div #umlaut-down1 {
-  visibility: hidden;
-}
-#content > div #umlaut-down2 {
+#content > div #umlaut2 {
   visibility: hidden;
 }

@@ -3,35 +3,34 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, GSDevTools);
+gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 
 let mainTl = gsap.timeline({});
-
-function museumAnimation(){
-    let tl = gsap.timeline({});
-
-    tl.from("museum", {duration:0.5, drawSVG:"100%", ease:"power3.out"}, 0)
-    .from("m1-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("#u1-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("#s-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("#u2-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("#e1-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("#e2-draw", {duration:0.5, drawSVG:"100%"}, 0)
-    .from("m2-draw", {duration:0.5, drawSVG:"100%"}, 0)
-
-    return tl;
-}
 
 function mutterAnimation(){
     let tl = gsap.timeline();
 
-    tl.to("mutter", {duration:.5, alpha:0.25})
-    .from("m", {y:20, ease:"power3.out"})
-    .from("u", {x:-20, ease:"power3.out"})
-    .from("t1", {x:20, ease:"power3.out"})
-    .from("t2", {y:-20, ease:"power3.out"})
-    .from("e", {y:-20, ease:"power3.out"})
-    .from("r", {x:20, ease:"power3.out"})
+    tl.from("#mutter", {duration:2, alpha:0.25})
+    .from("#m", {duration:2, y:30, ease:"power3.out"}, 0)
+    .from("#u", {duration:2, x:-30, ease:"power3.out"}, 0)
+    .from("#t1", {duration:2, x:30, ease:"power3.out"}, 0)
+    .from("#t2", {duration:2, y:-30, ease:"power3.out"}, 0)
+    .from("#e", {duration:2, y:-30, ease:"power3.out"}, 0)
+    .from("#r", {duration:2, x:30, ease:"power3.out"}, 0)
+
+    return tl;
+}
+
+function museumAnimation(){
+    let tl = gsap.timeline({});
+
+    tl.from("#m1-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#u1-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#s-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#u2-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#e1-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#e2-draw", {duration:1, drawSVG:"10%"}, 0)
+    .from("#m2-draw", {duration:1, drawSVG:"10%"}, 0)
 
     return tl;
 }
@@ -39,15 +38,29 @@ function mutterAnimation(){
 function brainAnimation(){
     let tl = gsap.timeline();
 
-    tl.from("brain", {duration:0.5, y:-20, alpha:0, ease:"power4.out"})
-    .to("brain", {duration:0.2, scale:1, ease:"power4.out"})
+    tl.from("#brain", {duration:3, y:-20, alpha:0, ease:"power4.out"}, 0)
+    .from("#brain", {duration:.8, scale:.95, transformOrigin: 'center', ease:"bounce.out", repeat:4}, 0)
+    
+    return tl;
+}
+
+function umlautAnimation(){
+    let tl = gsap.timeline();
+
+    tl.from("#umlautdown-1", {duration:2, y:"-=50", alpha:0, ease:"power4.out"}, 0)
+    .from("#umlautdown-2", {duration:2, y:"-=50", alpha:0, ease:"power4.out"}, 0)
+    .to("#umlautdown-1", {duration:1, ease:"power4.out", morphSVG:"#umlaut2"}, 1)
+    .to("#umlautdown-2", {duration:1, ease:"power4.out", morphSVG:"#umlaut1"}, 1)
+
 
     return tl;
 }
 
+
 mainTl.add(museumAnimation(), 0)
 .add(mutterAnimation(), 0)
-.add(brainAnimation(), 0)
+.add(brainAnimation(), 1)
+.add(umlautAnimation(), 0)
 
 ;
 
